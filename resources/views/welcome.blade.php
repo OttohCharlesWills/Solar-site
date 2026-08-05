@@ -14,21 +14,67 @@
 
   {{-- ================= NAV ================= --}}
     <header class="site-nav">
+
         <div class="container nav-inner">
-        <a href="#" class="brand">
-            <span class="mark">X</span>
-            <span>XTREAM<small>Services Limited</small></span>
-        </a>
-        <nav class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#why">Why Xtream</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="nav-cta">
-            <a href="tel:+2348099300040" class="nav-phone">+234 809 930 0040</a>
-            <a href="#contact" class="btn btn-dark">Get a Quote</a>
+
+            <a href="#" class="brand">
+                <span class="mark">X</span>
+                <span>
+                    XTREAM
+                    <small>Services Limited</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+            <nav class="nav-links" id="navMenu">
+
+                <a href="#services">Services</a>
+
+                <a href="#why">Why Xtream</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#contact">Contact</a>
+
+                <a href="{{ route('login') }}" class="mobile-login">
+
+                    Login
+
+                </a>
+
+            </nav>
+
+            <div class="nav-cta">
+
+                <a href="tel:+2349068589698" class="nav-phone">
+
+                    +234 906 858 9698
+
+                </a>
+
+                <a href="{{ route('login') }}" class="btn btn-outline">
+
+                    Login
+
+                </a>
+
+                <a href="#contact" class="btn btn-dark">
+
+                    Get a Quote
+
+                </a>
+
+            </div>
+
         </div>
-        </div>
+
     </header>
 
     {{-- ================= HERO ================= --}}
@@ -38,7 +84,7 @@
         </div>
         <div class="container hero-inner">
         <div class="hero-left">
-            <span class="eyebrow">Lagos, Nigeria · Security · Telecom · ICT</span>
+            <span class="eyebrow">Port Harcourt, Nigeria · Security · Telecom · ICT</span>
             <h1>Every camera, cable, and connection — <span class="hl">built to hold.</span></h1>
             <p class="lede">Xtream Services Limited designs, installs, and maintains the CCTV, telecommunications, fibre and IT systems that offices, homes, and industries depend on every day.</p>
             <div class="hero-actions">
@@ -467,6 +513,459 @@
 
     </section>
 
+    <section class="testimonials-section" id="testimonials">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">Testimonials</span>
+
+                <h2>Trusted by Businesses Across Nigeria</h2>
+
+                <p>
+                    Our clients trust us to deliver secure, reliable and future-ready
+                    technology solutions that keep their businesses connected and protected.
+                </p>
+
+            </div>
+
+            <div class="testimonial-carousel">
+
+                <!-- Previous -->
+
+                <button class="carousel-btn prev" id="testimonialPrev">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+
+                </button>
+
+                <!-- Slides -->
+
+                <div class="testimonial-wrapper">
+
+                    <div class="testimonial-track" id="testimonialTrack">
+
+                        <!-- CARD 1 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Xtream Services delivered our CCTV installation
+                                professionally. The quality of work exceeded
+                                expectations and support has been outstanding.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=12" alt="">
+
+                                <div>
+
+                                    <h4>John Adebayo</h4>
+
+                                    <span>Operations Manager</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 2 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Fibre deployment was completed ahead of schedule.
+                                Communication throughout the project was excellent.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=32" alt="">
+
+                                <div>
+
+                                    <h4>Grace Williams</h4>
+
+                                    <span>IT Administrator</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 3 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Their maintenance team responds quickly whenever
+                                we need assistance. Reliable service every time.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=25" alt="">
+
+                                <div>
+
+                                    <h4>Michael Okafor</h4>
+
+                                    <span>Estate Manager</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 4 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                The structured cabling project was completed with
+                                exceptional attention to detail.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=47" alt="">
+
+                                <div>
+
+                                    <h4>Daniel Peters</h4>
+
+                                    <span>Project Supervisor</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 5 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Their CCTV solution has given us complete peace
+                                of mind. We can monitor everything remotely.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=56" alt="">
+
+                                <div>
+
+                                    <h4>Samuel Bello</h4>
+
+                                    <span>Business Owner</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 6 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Professional engineers, quality equipment and
+                                excellent after-sales support.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=18" alt="">
+
+                                <div>
+
+                                    <h4>Sarah Johnson</h4>
+
+                                    <span>Facility Manager</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 7 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                Their network optimization significantly improved
+                                our office productivity.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=44" alt="">
+
+                                <div>
+
+                                    <h4>David Collins</h4>
+
+                                    <span>Network Administrator</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD 8 -->
+
+                        <div class="testimonial-card">
+
+                            <div class="quote-mark">“</div>
+
+                            <div class="stars">★★★★★</div>
+
+                            <p>
+                                One of the most dependable ICT companies we've
+                                worked with. Highly recommended.
+                            </p>
+
+                            <div class="client">
+
+                                <img src="https://i.pravatar.cc/150?img=63" alt="">
+
+                                <div>
+
+                                    <h4>Mary Eze</h4>
+
+                                    <span>Procurement Officer</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Next -->
+
+                <button class="carousel-btn next" id="testimonialNext">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+
+                </button>
+
+            </div>
+
+            <!-- Dots -->
+
+            <div class="testimonial-dots" id="testimonialDots"></div>
+
+        </div>
+
+    </section>
+
+    <section class="projects-section" id="projects">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    Featured Projects
+                </span>
+
+                <h2>
+                    Delivering reliable technology solutions across industries.
+                </h2>
+
+                <p>
+                    Every project reflects our commitment to security,
+                    connectivity and long-term reliability for businesses,
+                    institutions and residential developments.
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- LARGE PROJECT -->
+
+                <article class="project-card large">
+
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+
+                    <div class="project-overlay">
+
+                        <span class="project-category">
+                            CCTV Infrastructure
+                        </span>
+
+                        <h3>
+                            Enterprise Surveillance Deployment
+                        </h3>
+
+                        <p>
+                            Complete CCTV installation, remote monitoring
+                            and structured network integration for a
+                            corporate facility.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>CCTV</span>
+
+                            <span>Networking</span>
+
+                            <span>Security</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- LARGE PROJECT -->
+
+                <article class="project-card large">
+
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80">
+
+                    <div class="project-overlay">
+
+                        <span class="project-category">
+                            Fibre Optics
+                        </span>
+
+                        <h3>
+                            High-Speed Fibre Backbone
+                        </h3>
+
+                        <p>
+                            Fibre optic installation and backbone deployment
+                            providing fast and reliable connectivity.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Fibre</span>
+
+                            <span>Infrastructure</span>
+
+                            <span>Networking</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- SMALL -->
+
+                <article class="project-card">
+
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80">
+
+                    <div class="project-overlay">
+
+                        <span class="project-category">
+                            ICT
+                        </span>
+
+                        <h3>
+                            Modern Server Room
+                        </h3>
+
+                    </div>
+
+                </article>
+
+                <!-- SMALL -->
+
+                <article class="project-card">
+
+                    <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=800&q=80">
+
+                    <div class="project-overlay">
+
+                        <span class="project-category">
+                            Telecommunications
+                        </span>
+
+                        <h3>
+                            Structured Cabling
+                        </h3>
+
+                    </div>
+
+                </article>
+
+                <!-- SMALL -->
+
+                <article class="project-card">
+
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80">
+
+                    <div class="project-overlay">
+
+                        <span class="project-category">
+                            Smart Security
+                        </span>
+
+                        <h3>
+                            Access Control System
+                        </h3>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
    <section class="faq-section" id="faq">
         <div class="container">
 
@@ -743,15 +1242,15 @@
 
             <div class="contact-line">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z"/></svg></span>
-            <div><small>Phone</small><a href="tel:+2348099300040">+234 809 930 0040</a></div>
+            <div><small>Phone</small><a href="tel:+2349068589698">+234 906 858 9698</a></div>
             </div>
             <div class="contact-line">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
-            <div><small>Email</small><a href="mailto:info@xtreamservices.com">info@xtreamservices.com</a></div>
+            <div><small>Email</small><a href="mailto:info@xtreamservices.com">info@xtreamservicesltd.com</a></div>
             </div>
             <div class="contact-line">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
-            <div><small>Web</small><a href="https://www.xtreamservices.com">www.xtreamservices.com</a></div>
+            <div><small>Web</small><a href="https://www.xtreamservicesltd.com">www.xtreamservicesltd.com</a></div>
             </div>
         </div>
 
@@ -814,6 +1313,29 @@
     </footer>
 
   <script>
+
+const navToggle = document.getElementById("navToggle");
+
+const navMenu = document.getElementById("navMenu");
+
+navToggle.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navMenu.classList.remove("active");
+
+    });
+
+});
+
+
+
 const grid = document.getElementById("heroGrid");
 const heroDark = document.querySelector(".hero-dark");
 
@@ -918,6 +1440,228 @@ document.querySelectorAll(".faq-question").forEach(question=>{
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const track = document.getElementById("testimonialTrack");
+    const wrapper = document.querySelector(".testimonial-wrapper");
+    const prev = document.getElementById("testimonialPrev");
+    const next = document.getElementById("testimonialNext");
+    const dotsContainer = document.getElementById("testimonialDots");
+
+    let slides = [...track.children];
+
+    let visible = getVisible();
+
+    function getVisible() {
+        if (window.innerWidth <= 768) return 1;
+        if (window.innerWidth <= 1024) return 2;
+        return 3;
+    }
+
+    // Clone first and last slides
+    function setupCarousel() {
+
+        track.innerHTML = "";
+
+        slides.forEach(s => track.appendChild(s));
+
+        const first = slides.slice(0, visible).map(x => x.cloneNode(true));
+        const last = slides.slice(-visible).map(x => x.cloneNode(true));
+
+        last.forEach(x => track.prepend(x));
+        first.forEach(x => track.appendChild(x));
+
+    }
+
+    setupCarousel();
+
+    let allSlides = [...track.children];
+
+    let current = visible;
+
+    let autoplay;
+
+    function slideWidth() {
+
+        const gap = 30;
+
+        if (!allSlides.length) return 0;
+
+        if (!allSlides[current]) return allSlides[0].offsetWidth + gap;
+
+        return allSlides[current].offsetWidth + gap;
+
+    }
+
+    function move(animate = true) {
+
+        track.style.transition = animate
+            ? "transform .65s cubic-bezier(.22,.61,.36,1)"
+            : "none";
+
+        track.style.transform =
+            `translateX(-${current * slideWidth()}px)`;
+
+        updateDots();
+
+        highlightCenter();
+
+    }
+
+    // dots
+    function buildDots() {
+
+        dotsContainer.innerHTML = "";
+
+        slides.forEach((_, i) => {
+
+            const dot = document.createElement("button");
+
+            if (i === 0)
+                dot.classList.add("active");
+
+            dot.onclick = () => {
+
+                current = i + visible;
+
+                move();
+
+            }
+
+            dotsContainer.appendChild(dot);
+
+        });
+
+    }
+
+    function updateDots() {
+
+        const dots = [...dotsContainer.children];
+
+        let index = current - visible;
+
+        if (index >= slides.length)
+            index = 0;
+
+        if (index < 0)
+            index = slides.length - 1;
+
+        dots.forEach(d => d.classList.remove("active"));
+
+        if (dots[index])
+            dots[index].classList.add("active");
+
+    }
+
+    // Highlight middle card
+    function highlightCenter() {
+
+        allSlides.forEach(card => {
+
+            card.style.transform = "scale(.95)";
+            card.style.opacity = ".65";
+
+        });
+
+        const center = current + Math.floor(visible / 2);
+
+        if (allSlides[center]) {
+
+            allSlides[center].style.transform = "scale(1)";
+            allSlides[center].style.opacity = "1";
+
+        }
+
+    }
+
+    next.onclick = () => {
+
+        current++;
+
+        move();
+
+    };
+
+    prev.onclick = () => {
+
+        current--;
+
+        move();
+
+    };
+
+    track.addEventListener("transitionend", () => {
+
+        if (current >= slides.length + visible) {
+
+            current = visible;
+
+            move(false);
+
+        }
+
+        if (current < visible) {
+
+            current = slides.length + visible - 1;
+
+            move(false);
+
+        }
+
+    });
+
+    function start() {
+
+        autoplay = setInterval(() => {
+
+            current++;
+
+            move();
+
+        }, 5000);
+
+    }
+
+    function stop() {
+
+        clearInterval(autoplay);
+
+    }
+
+    wrapper.addEventListener("mouseenter", stop);
+    wrapper.addEventListener("mouseleave", start);
+
+    window.addEventListener("resize", () => {
+
+        visible = getVisible();
+
+        track.style.transition = "none";
+
+        track.style.transform = "";
+
+        setupCarousel();
+
+        allSlides = [...track.children];
+
+        current = visible;
+
+        move(false);
+
+        buildDots();
+
+    });
+
+    buildDots();
+
+    move(false);
+
+    start();
+
+});
+
+
+
 </script>
 
 </body>
