@@ -11,7 +11,132 @@
     <link rel="stylesheet" href="/app.css">
     <link rel="icon" href="/logo.png" type="image/x-icon">
 </head>
+
+<style>
+    .whatsapp-float{
+
+    position:fixed;
+
+    right:28px;
+
+    bottom:28px;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 20px;
+
+    border-radius:60px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-weight:600;
+
+    box-shadow:0 18px 45px rgba(37,211,102,.35);
+
+    transition:.35s;
+
+    animation:whatsappFloat 3s infinite;
+
+}
+
+.whatsapp-float svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:0 25px 60px rgba(37,211,102,.45);
+
+}
+
+@keyframes whatsappFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    15%{
+
+        transform:translateY(-8px);
+
+    }
+
+    30%{
+
+        transform:translateY(0);
+
+    }
+
+    45%{
+
+        transform:translateY(-5px);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.whatsapp-float{
+
+right:18px;
+
+bottom:18px;
+
+padding:14px;
+
+border-radius:50%;
+
+}
+
+.whatsapp-float span{
+
+display:none;
+
+}
+
+.whatsapp-float svg{
+
+width:30px;
+
+height:30px;
+
+}
+
+}
+</style>
+
 <body>
+
+    <a href="https://wa.me/2349068589698?text=Hello%20Xtream%20Services,%20I%20would%20like%20to%20make%20an%20enquiry."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp">
+
+            <svg viewBox="0 0 32 32" fill="currentColor">
+                <path d="M19.11 17.43c-.29-.15-1.72-.85-1.98-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.18.2-.35.22-.64.07-.29-.15-1.23-.45-2.35-1.45-.87-.77-1.46-1.73-1.63-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.35.44-.52.15-.18.2-.3.3-.49.1-.2.05-.37-.03-.52-.07-.15-.66-1.6-.91-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.48s1.07 2.89 1.22 3.09c.15.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.72.22 1.36.19 1.87.12.57-.09 1.71-.69 1.95-1.36.24-.67.24-1.24.17-1.36-.08-.13-.27-.2-.57-.34z"/>
+                <path d="M16 0C7.16 0 0 7.16 0 16c0 3.17.93 6.12 2.53 8.6L0 32l7.62-2.49A15.93 15.93 0 0 0 16 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.09c-2.62 0-5.06-.76-7.14-2.08l-.51-.32-4.52 1.48 1.47-4.41-.33-.54A13.03 13.03 0 1 1 16 29.09z"/>
+            </svg>
+
+            <span>Chat with us</span>
+
+    </a>
 
   {{-- ================= NAV ================= --}}
     <header class="site-nav">
@@ -1236,64 +1361,92 @@
     {{-- ================= CONTACT ================= --}}
     <section class="section contact" id="contact">
         <div class="container contact-grid">
-        <div class="contact-info">
-            <span class="eyebrow" style="color:var(--blue-400);margin-bottom:16px;display:inline-flex;">Get in touch</span>
-            <h2>Tell us what you need secured or connected.</h2>
-            <p>Reach out directly, or send the details through the form and an engineer will get back to you.</p>
+            <div class="contact-info">
+                <span class="eyebrow" style="color:var(--blue-400);margin-bottom:16px;display:inline-flex;">Get in touch</span>
+                <h2>Tell us what you need secured or connected.</h2>
+                <p>Reach out directly, or send the details through the form and an engineer will get back to you.</p>
 
-            <div class="contact-line">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z"/></svg></span>
-            <div><small>Phone</small><a href="tel:+2349068589698">+234 906 858 9698</a></div>
-            </div>
-            <div class="contact-line">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
-            <div><small>Email</small><a href="mailto:info@xtreamservices.com">info@xtreamservicesltd.com</a></div>
-            </div>
-            <div class="contact-line">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
-            <div><small>Web</small><a href="https://www.xtreamservicesltd.com">www.xtreamservicesltd.com</a></div>
-            </div>
-        </div>
+                <div class="contact-line">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z"/></svg></span>
+                <div><small>Phone</small><a href="tel:+2349068589698">+234 906 858 9698</a></div>
+                </div>
+                <div class="contact-line">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+                <div><small>Email</small><a href="mailto:info@xtreamservices.com">info@xtreamservicesltd.com</a></div>
+                </div>
+                <div class="contact-line">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
+                <div><small>Web</small><a href="https://www.xtreamservicesltd.com">www.xtreamservicesltd.com</a></div>
+                </div>
+                <div class="contact-line">
+                    <span class="ic">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.71 4.54-4.71 1.32 0 2.7.24 2.7.24v2.97h-1.52c-1.5 0-1.96.93-1.96 1.89v2.27h3.34l-.53 3.49h-2.81V24C19.61 23.09 24 18.1 24 12.07Z"/>
+                        </svg>
+                    </span>
 
-        <form class="form-card" method="POST" action="">
-            @csrf
-            <div class="form-row">
-            <div class="field">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name" placeholder="Adaeze Okafor" required>
+                    <div>
+                        <small>Facebook</small>
+                        <a href="https://facebook.com/yourpage" target="_blank">
+                            Follow us
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-line">
+                    <span class="ic">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.45 20.45H16.9v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.93v5.68H9.35V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z"/>
+                        </svg>
+                    </span>
+
+                    <div>
+                        <small>LinkedIn</small>
+                        <a href="https://linkedin.com/company/your-company" target="_blank">
+                            Connect with us
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="field">
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" placeholder="080X XXX XXXX" required>
-            </div>
-            </div>
-            <div class="form-row">
-            <div class="field full">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" placeholder="you@company.com" required>
-            </div>
-            </div>
-            <div class="form-row">
-            <div class="field full">
-                <label for="service">Service needed</label>
-                <select id="service" name="service">
-                <option>Security Surveillance (CCTV)</option>
-                <option>Telecommunications</option>
-                <option>Software &amp; ICT Solutions</option>
-                <option>Fibre Optic Services</option>
-                <option>Support &amp; Maintenance</option>
-                <option>Not sure yet</option>
-                </select>
-            </div>
-            </div>
-            <div class="form-row">
-            <div class="field full">
-                <label for="message">Tell us about the site</label>
-                <textarea id="message" name="message" placeholder="Location, building size, current setup..."></textarea>
-            </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Send request</button>
-        </form>
+
+            <form class="form-card" method="POST" action="">
+                @csrf
+                <div class="form-row">
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Adaeze Okafor" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="080X XXX XXXX" required>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="field full">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="field full">
+                    <label for="service">Service needed</label>
+                    <select id="service" name="service">
+                    <option>Security Surveillance (CCTV)</option>
+                    <option>Telecommunications</option>
+                    <option>Software &amp; ICT Solutions</option>
+                    <option>Fibre Optic Services</option>
+                    <option>Support &amp; Maintenance</option>
+                    <option>Not sure yet</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="field full">
+                    <label for="message">Tell us about the site</label>
+                    <textarea id="message" name="message" placeholder="Location, building size, current setup..."></textarea>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send request</button>
+            </form>
         </div>
     </section>
 
