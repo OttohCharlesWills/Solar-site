@@ -1408,7 +1408,14 @@ height:30px;
                 </div>
             </div>
 
-            <form class="form-card" method="POST" action="">
+            <form class="form-card" method="POST" action="{{ route('contact.send') }}">
+
+                @if (session('success'))
+                    <div class="field full" style="color:var(--green-400); margin-bottom:16px;">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 @csrf
                 <div class="form-row">
                 <div class="field">
