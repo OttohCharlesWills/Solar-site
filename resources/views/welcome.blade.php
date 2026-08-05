@@ -49,12 +49,6 @@
                     Login
 
                 </a>
-                
-                <a href="#contact" class="btn btn-dark">
-
-                    Get a Quote
-
-                </a>
 
             </nav>
 
