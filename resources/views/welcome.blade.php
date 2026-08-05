@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app.css">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -46,6 +47,12 @@
                 <a href="{{ route('login') }}" class="mobile-login">
 
                     Login
+
+                </a>
+                
+                <a href="#contact" class="btn btn-dark">
+
+                    Get a Quote
 
                 </a>
 
@@ -1312,136 +1319,142 @@
         </div>
     </footer>
 
-  <script>
 
-const navToggle = document.getElementById("navToggle");
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-const navMenu = document.getElementById("navMenu");
+    /* =========================================
+        NAV TOGGLE (mobile menu)
+    ========================================= */
 
-navToggle.addEventListener("click",()=>{
+    const navToggle = document.getElementById("navToggle");
+    const navMenu = document.getElementById("navMenu");
 
-    navMenu.classList.toggle("active");
-
-});
-
-document.querySelectorAll(".nav-links a").forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        navMenu.classList.remove("active");
-
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
     });
 
-});
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+        });
+    });
 
+    /* =========================================
+        HERO GRID RIPPLE
+    ========================================= */
 
+    const grid = document.getElementById("heroGrid");
+    const heroDark = document.querySelector(".hero-dark");
 
-const grid = document.getElementById("heroGrid");
-const heroDark = document.querySelector(".hero-dark");
+    const cellSize = 46;
 
-const cellSize = 46;
+    let cols, rows, cells;
 
-let cols, rows, cells;
+    function buildGrid() {
 
-function buildGrid() {
+        grid.innerHTML = "";
 
-    grid.innerHTML = "";
+        cols = Math.ceil(heroDark.offsetWidth / cellSize);
+        rows = Math.ceil(heroDark.offsetHeight / cellSize);
 
-    cols = Math.ceil(heroDark.offsetWidth / cellSize);
-    rows = Math.ceil(heroDark.offsetHeight / cellSize);
+        grid.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
 
-    grid.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+        for (let i = 0; i < cols * rows; i++) {
 
-    for (let i = 0; i < cols * rows; i++) {
+            const cell = document.createElement("div");
+            cell.className = "grid-cell";
+            grid.appendChild(cell);
 
-        const cell = document.createElement("div");
-        cell.className = "grid-cell";
-        grid.appendChild(cell);
+        }
+
+        cells = [...grid.children];
 
     }
 
-    cells = [...grid.children];
+    buildGrid();
 
-}
+    window.addEventListener("resize", buildGrid);
 
-buildGrid();
+    heroDark.addEventListener("mousemove", e => {
 
-window.addEventListener("resize", buildGrid);
+        const rect = heroDark.getBoundingClientRect();
 
-heroDark.addEventListener("mousemove", e => {
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-    const rect = heroDark.getBoundingClientRect();
+        const col = Math.floor(x / cellSize);
+        const row = Math.floor(y / cellSize);
 
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+        const center = row * cols + col;
 
-    const col = Math.floor(x / cellSize);
-    const row = Math.floor(y / cellSize);
-
-    const center = row * cols + col;
-
-    ripple(center);
-
-});
-
-function ripple(center){
-
-    const offsets = [
-        [0,1],
-        [-1,.7],[1,.7],
-        [-cols,.7],[cols,.7],
-        [-cols-1,.4],[-cols+1,.4],
-        [cols-1,.4],[cols+1,.4]
-    ];
-
-    offsets.forEach(([offset,strength])=>{
-
-        const index=center+offset;
-
-        if(!cells[index]) return;
-
-        const cell=cells[index];
-
-        cell.style.background=`rgba(47,127,255,${0.45*strength})`;
-        cell.style.boxShadow=`0 0 ${35*strength}px rgba(47,127,255,.9)`;
-
-        clearTimeout(cell.timer);
-
-        cell.timer=setTimeout(()=>{
-
-            cell.style.background="";
-            cell.style.boxShadow="";
-
-        },250);
+        ripple(center);
 
     });
 
-}
+    function ripple(center) {
 
+        const offsets = [
+            [0, 1],
+            [-1, .7], [1, .7],
+            [-cols, .7], [cols, .7],
+            [-cols - 1, .4], [-cols + 1, .4],
+            [cols - 1, .4], [cols + 1, .4]
+        ];
 
-document.querySelectorAll(".faq-question").forEach(question=>{
+        offsets.forEach(([offset, strength]) => {
 
-    question.addEventListener("click",()=>{
+            const index = center + offset;
 
-        const item=question.parentElement;
+            if (!cells[index]) return;
 
-        document.querySelectorAll(".faq-item").forEach(faq=>{
+            const cell = cells[index];
 
-            if(faq!==item){
+            cell.style.background = `rgba(47,127,255,${0.45 * strength})`;
+            cell.style.boxShadow = `0 0 ${35 * strength}px rgba(47,127,255,.9)`;
 
-                faq.classList.remove("active");
+            clearTimeout(cell.timer);
 
-            }
+            cell.timer = setTimeout(() => {
+
+                cell.style.background = "";
+                cell.style.boxShadow = "";
+
+            }, 250);
 
         });
 
-        item.classList.toggle("active");
+    }
+
+    /* =========================================
+        FAQ ACCORDION
+    ========================================= */
+
+    document.querySelectorAll(".faq-question").forEach(question => {
+
+        question.addEventListener("click", () => {
+
+            const item = question.parentElement;
+
+            document.querySelectorAll(".faq-item").forEach(faq => {
+
+                if (faq !== item) {
+
+                    faq.classList.remove("active");
+
+                }
+
+            });
+
+            item.classList.toggle("active");
+
+        });
 
     });
 
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+    /* =========================================
+        TESTIMONIAL CAROUSEL
+    ========================================= */
 
     const track = document.getElementById("testimonialTrack");
     const wrapper = document.querySelector(".testimonial-wrapper");
@@ -1659,9 +1672,6 @@ document.addEventListener("DOMContentLoaded", () => {
     start();
 
 });
-
-
-
 </script>
 
 </body>
