@@ -683,20 +683,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                Xtream Services delivered our CCTV installation
-                                professionally. The quality of work exceeded
-                                expectations and support has been outstanding.
+                                Their CCTV solution has given us complete peace of mind. We can monitor evrything remotely
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=12" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=12" alt=""> --}}
 
                                 <div>
 
-                                    <h4>John Adebayo</h4>
+                                    <h4>Samuel Bello</h4>
 
-                                    <span>Operations Manager</span>
+                                    <span>Business Owner</span>
 
                                 </div>
 
@@ -713,19 +711,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                Fibre deployment was completed ahead of schedule.
-                                Communication throughout the project was excellent.
+                                Professional engineers, quality equipment and excellent after-sales support.
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=32" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=32" alt=""> --}}
 
                                 <div>
 
-                                    <h4>Grace Williams</h4>
+                                    <h4>Sarah Johnson</h4>
 
-                                    <span>IT Administrator</span>
+                                    <span>Facilty Manager</span>
 
                                 </div>
 
@@ -748,7 +745,7 @@ height:30px;
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=25" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=25" alt=""> --}}
 
                                 <div>
 
@@ -771,19 +768,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                The structured cabling project was completed with
-                                exceptional attention to detail.
+                                Their network optimization significantly improved our officee productivity.
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=47" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=47" alt=""> --}}
 
                                 <div>
 
-                                    <h4>Daniel Peters</h4>
+                                    <h4>David Collins</h4>
 
-                                    <span>Project Supervisor</span>
+                                    <span>Network Administrator</span>
 
                                 </div>
 
@@ -800,19 +796,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                Their CCTV solution has given us complete peace
-                                of mind. We can monitor everything remotely.
+                                One of the most dependable ICT companies we've worked with. Highly recommended.
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=56" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=56" alt=""> --}}
 
                                 <div>
 
-                                    <h4>Samuel Bello</h4>
+                                    <h4>Mary Eze</h4>
 
-                                    <span>Business Owner</span>
+                                    <span>Procurement Officer</span>
 
                                 </div>
 
@@ -858,19 +853,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                Their network optimization significantly improved
-                                our office productivity.
+                                Xtream Services delivered our CCTV installatiob professionally. The quality of work exceeded expectations and support has been outstanding
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=44" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=44" alt=""> --}}
 
                                 <div>
 
-                                    <h4>David Collins</h4>
+                                    <h4>John Adebayo</h4>
 
-                                    <span>Network Administrator</span>
+                                    <span>Operations Manager</span>
 
                                 </div>
 
@@ -887,19 +881,18 @@ height:30px;
                             <div class="stars">★★★★★</div>
 
                             <p>
-                                One of the most dependable ICT companies we've
-                                worked with. Highly recommended.
+                                Fibre deployment was completed ahead of schedule. Communication throughout the project was excellent
                             </p>
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=63" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=63" alt=""> --}}
 
                                 <div>
 
-                                    <h4>Mary Eze</h4>
+                                    <h4>Grace Williams</h4>
 
-                                    <span>Procurement Officer</span>
+                                    <span>IT Administrator</span>
 
                                 </div>
 
