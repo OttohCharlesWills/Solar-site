@@ -830,7 +830,7 @@ height:30px;
 
                             <div class="client">
 
-                                <img src="https://i.pravatar.cc/150?img=18" alt="">
+                                {{-- <img src="https://i.pravatar.cc/150?img=18" alt=""> --}}
 
                                 <div>
 
