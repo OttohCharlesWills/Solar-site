@@ -37,6 +37,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -52,6 +53,20 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
+
+                                
+                                <li class="nav-item">
+                                    <a href="{{ url('/home') }}" class="nav-link">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{{ route('jobs.index') }}" class="nav-link">
+                                        Jobs
+                                    </a>
+                                </li>
+
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>

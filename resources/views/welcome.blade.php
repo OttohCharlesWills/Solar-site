@@ -215,7 +215,7 @@ height:30px;
             <p class="lede">Xtream Services Limited designs, installs, and maintains the CCTV, telecommunications, fibre and IT systems that offices, homes, and industries depend on every day.</p>
             <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Request a site assessment</a>
-            <a href="tel:+2348099300040" class="btn btn-ghost" style="border-color:rgba(15,30,59,.18);color:var(--navy-900);">Call +234 809 930 0040</a>
+            <a href="tel:+2348099300040" class="btn btn-ghost">Call +234 809 930 0040</a>
             </div>
             <div class="trust-row">
             <div class="trust-item">

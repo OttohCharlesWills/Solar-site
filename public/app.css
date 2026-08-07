@@ -1264,6 +1264,10 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
+.trust-item span {
+  color: white;
+}
+
 }
 
 
