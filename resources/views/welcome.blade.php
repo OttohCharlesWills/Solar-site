@@ -1294,7 +1294,7 @@ height:30px;
                             <div class="faq-answer">
 
                                 <p>
-                                    Xtream Services is based in Lagos and delivers
+                                    Xtream Services is based in Port Harcourt and delivers
                                     projects across Nigeria depending on client
                                     requirements.
                                 </p>
@@ -1361,7 +1361,7 @@ height:30px;
 
                 <div class="contact-line">
                 <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z"/></svg></span>
-                <div><small>Phone</small><a href="tel:+2349068589698">+234 906 858 9698</a></div>
+                <div><small>Phone</small><a href="tel:+2349068589698">+234 906 858 9698 / +234 818 3816436</a></div>
                 </div>
                 <div class="contact-line">
                 <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
